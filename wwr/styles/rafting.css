@@ -1,4 +1,3 @@
-
 :root {
   --primary-color: #1E6091;
   --secondary-color: #76C893;
@@ -25,7 +24,6 @@ header, main, footer {
   margin: 0 auto;
   background-color: white;
 }
-
 
 .header-grid {
   display: grid;
@@ -57,6 +55,11 @@ header, main, footer {
   color: var(--primary-color);
 }
 
+.nav-flex a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--accent1-color);
+}
 
 .hero {
   position: relative;
@@ -99,6 +102,9 @@ header, main, footer {
   border-radius: 6px;
 }
 
+section {
+  margin-bottom: 2rem;
+}
 
 .history {
   padding: 1rem;
@@ -113,9 +119,8 @@ header, main, footer {
 }
 
 .history-content img {
-  width: 80px;
+  width: 100px;
 }
-
 
 .adventures {
   padding: 1rem;
@@ -144,10 +149,11 @@ header, main, footer {
   font-weight: bold;
 }
 
-
-footer {
-  text-align: center;
-  margin-top: 2rem;
+/* ✅ Updated Footer using Grid layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
   padding: 1rem;
   border-top: 1px solid #ccc;
   font-size: 0.9rem;
@@ -155,26 +161,55 @@ footer {
   color: white;
 }
 
-footer p {
-  margin-bottom: 1rem;
+.footer-grid p {
+  margin-left: 1rem;
 }
 
-footer .socialmedia {
+.footer-grid .socialmedia {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+  margin-right: 1rem;
 }
 
-footer .socialmedia a {
+.footer-grid .socialmedia a {
   text-decoration: none;
 }
 
-footer .socialmedia img {
+.footer-grid .socialmedia img {
   width: 24px;
   height: 24px;
 }
-.nav-flex a:hover {
-  font-weight: 700;
-  text-decoration: underline;
-  color: var(--accent1-color);
+
+/* ✅ Optional: Mobile Responsive Navigation */
+@media screen and (max-width: 600px) {
+  .header-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .nav-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero article {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-grid .socialmedia {
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
 }
