@@ -213,3 +213,147 @@ section {
     margin-top: 0.5rem;
   }
 }
+
+/* === CONTACT PAGE STYLES === */
+
+.contact-info,
+.employees,
+.contact-form {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  
+}
+
+h1{
+  color: #1E6091;
+}
+h2{
+  color: #1E6091;;
+}
+.contact-info address {
+  font-style: normal;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 1rem;
+}
+
+/* Employee section */
+.employee-profiles {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.employee-profiles figure {
+  flex: 1 1 30%;
+}
+
+.employee-profiles img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Contact form styling */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Radio buttons and checkbox */
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Submit button */
+.contact-form button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: start;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s;
+}
+/* === MEDIA QUERIES FOR RESPONSIVENESS === */
+
+/* Tablets (768px and up) */
+@media (min-width: 768px) {
+  .employee-profiles {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .contact-form form {
+    flex-direction: column;
+  }
+
+  .contact-form button {
+    align-self: flex-start;
+  }
+}
+
+/* Mobile (less than 768px) */
+@media (max-width: 767px) {
+  .employee-profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employee-profiles figure {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  iframe {
+    height: 250px;
+  }
+
+  .contact-form form {
+    padding: 1rem;
+  }
+
+  .contact-info,
+  .employees,
+  .contact-form {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}

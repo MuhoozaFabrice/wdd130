@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact White Water Rafting for inquiries, reservations, or website feedback." />
+  <meta name="author" content="Fabrice" />
+  <title>Contact Us - White Water Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header-grid">
+    <img src="images/logo.jpg" alt="Rafting Site Logo">
+    <h1>White Water Rafting Co.</h1>
+    <nav>
+      <ul class="nav-flex">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Whether it's about bookings, questions, or feedback, feel free to reach out.</p>
+      <address>
+        <strong>White Water Rafting Co.</strong><br>
+        123 Rapid River Lane<br>
+        Adventure Town, USA 56789<br>
+        Phone: (123) 456-7890<br>
+        Email: info@wwrafting.com
+      </address>
+
+      <h2>Find Us Here</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086381088185!2d-122.41941548468153!3d37.774929779759274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e4febb29%3A0x8d83e15e0dfbfb84!2sRapid%20Rafting%20Center!5e0!3m2!1sen!2sus!4v1620000000000" 
+        width="100%" 
+        height="300" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-profiles">
+        <figure>
+          <img src="images/employee1.jpeg" width="250" height="200" alt="Sarah - Customer Service">
+          <figcaption>John - Customer Service</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpeg" width="250" height="200" alt="John - Reservation Manager">
+          <figcaption>Sarah - Reservation Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpeg" width="250" height="200" alt="Emily - Rafting Guide">
+          <figcaption>Emily - Rafting Guide</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p>Purpose of Message:</p>
+        <input type="radio" id="general" name="purpose" value="general" required>
+        <label for="general">General Inquiry</label><br>
+
+        <input type="radio" id="reservation" name="purpose" value="reservation">
+        <label for="reservation">Reservation Question</label><br>
+
+        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+        <label for="suggestion">Website Suggestion</label><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer-grid">
+    <p>&copy; 2025 White Water Rafting Co. | Muhooza Fabrice</p>
+    <a href="images/Screenshot (139).png" target="_blank">View Contact Page Wireframe</a>
+    <div class="socialmedia">
+      <a href="https://facebook.com"><img src="images/facebook logo_icon.png" alt="Facebook" /></a>
+      <a href="https://twitter.com"><img src="images/twitter logo_icon.png" alt="Twitter" /></a>
+      <a href="https://instagram.com"><img src="images/instagram_icon.png" alt="Instagram" /></a>
+    </div>
+  </footer>
+</body>
+</html>
