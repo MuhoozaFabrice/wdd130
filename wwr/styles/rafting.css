@@ -122,6 +122,25 @@ section {
 .history-content img {
   width: 100px;
 }
+.adventure-gallery {
+  display: flex;
+  justify-content: space-around; /* evenly spread the items */
+  flex-wrap: wrap; /* wrap on smaller screens */
+  text-align: center; /* center text and captions */
+  gap: 20px; /* spacing between items */
+  padding: 20px;
+}
+
+.adventure-gallery figure {
+  max-width: 250px; /* limit width for each block */
+  margin: 0;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
 .adventures {
   padding: 1rem;

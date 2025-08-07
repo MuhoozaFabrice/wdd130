@@ -31,9 +31,9 @@
       <p>We’d love to hear from you! Whether it's about bookings, questions, or feedback, feel free to reach out.</p>
       <address>
         <strong>White Water Rafting Co.</strong><br>
-        123 Rapid River Lane<br>
-        Adventure Town, USA 56789<br>
-        Phone: (123) 456-7890<br>
+        Rapid River Lane<br>
+        Adventure Town, Kampala Uganda<br>
+        Phone: (256) 780652989<br>
         Email: info@wwrafting.com
       </address>
 
@@ -48,53 +48,65 @@
       </iframe>
     </section>
 
-    <section class="employees">
-      <h2 style="text-align: center;">Meet Our Team</h2>
-      <div class="employee-profiles">
-        <figure>
-          <img src="images/Fab.jpg" width="500" height="600" alt="Fabrice - Customer Service">
-          <figcaption><strong>Fabrice - CEO</strong></figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee2.jpeg" width="250" height="200" alt="Sarah - Reservation Manager">
-          <figcaption><strong>Sarah - Reservation Manager</strong></figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee3.jpeg" width="250" height="200" alt="Emily - Rafting Guide">
-          <figcaption><strong>Emily - Rafting Guide</strong></figcaption>
-        </figure>
-      </div>
-    </section>
+   <section class="employees">
+  <h2 style="text-align: center; font-family: Arial, sans-serif; margin-bottom: 20px;">Meet Our Team</h2>
+  <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+    
+    <figure style="text-align: center; max-width: 200px;">
+      <img src="images/Fab.jpg" alt="Fabrice - CEO" style="width: 200px; height: 250px; object-fit: cover; border-radius: 10px;">
+      <figcaption style="margin-top: 10px; font-weight: bold;">Fabrice - CEO</figcaption>
+    </figure>
+    
+    <figure style="text-align: center; max-width: 200px;">
+      <img src="images/employee2.jpeg" alt="Sarah - Reservation Manager" style="width: 200px; height: 250px; object-fit: cover; border-radius: 10px;">
+      <figcaption style="margin-top: 10px; font-weight: bold;">Sarah - Reservation Manager</figcaption>
+    </figure>
+    
+    <figure style="text-align: center; max-width: 200px;">
+      <img src="images/employee3.jpeg" alt="Emily - Rafting Guide" style="width: 200px; height: 250px; object-fit: cover; border-radius: 10px;">
+      <figcaption style="margin-top: 10px; font-weight: bold;">Emily - Rafting Guide</figcaption>
+    </figure>
 
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form>
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required>
+  </div>
+</section>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+<section class="contact-form" style="max-width: 600px; margin: 50px auto; font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  <h2 style="text-align: center; margin-bottom: 20px;">Send Us a Message</h2>
+  <form>
+    <label for="fullname" style="display: block; margin-bottom: 5px;">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;">
 
-        <p>Purpose of Message:</p>
+    <label for="email" style="display: block; margin-bottom: 5px;">Email Address:</label>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;">
+
+    <p style="margin-bottom: 10px;">Purpose of Message:</p>
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px;">
         <input type="radio" id="general" name="purpose" value="general" required>
-        <label for="general">General Inquiry</label><br>
-
+        General Inquiry
+      </label>
+      <label style="display: block; margin-bottom: 5px;">
         <input type="radio" id="reservation" name="purpose" value="reservation">
-        <label for="reservation">Reservation Question</label><br>
-
+        Reservation Question
+      </label>
+      <label style="display: block;">
         <input type="radio" id="suggestion" name="purpose" value="suggestion">
-        <label for="suggestion">Website Suggestion</label><br><br>
+        Website Suggestion
+      </label>
+    </div>
 
-        <label for="message">Your Message:</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <label for="message" style="display: block; margin-bottom: 5px;">Your Message:</label>
+    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 15px;"></textarea>
 
-        <input type="checkbox" id="subscribe" name="subscribe">
-        <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
+    <label style="display: block; margin-bottom: 15px;">
+      <input type="checkbox" id="subscribe" name="subscribe">
+      Please subscribe me to the monthly newsletter
+    </label>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
+    <button type="submit" style="background-color: #1E6091; color: white; border: none; padding: 12px 20px; border-radius: 5px; cursor: pointer; width: 100%;">Send Message</button>
+  </form>
+</section>
+
 
   <footer class="footer-grid">
     <p>&copy; 2025 White Water Rafting Co. | Muhooza Fabrice</p>
