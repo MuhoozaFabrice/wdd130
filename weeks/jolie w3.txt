@@ -1,0 +1,142 @@
+:root {
+  --primary-color: #1D3557;
+  --secondary-color: #457B9D;
+  --accent1-color: #70A288;
+  --accent2-color: #A8DADC;
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Hero styling */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.socialmedia img {
+  width: 75px;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn more about Dry Oar Rafting Co. including our mission, history, and contact information." />
+  <meta name="Uwase jolie" content="Jolie" />
+  <title>About Us - Dry Oar Rafting Co.</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+    <header>
+    <img src="images/dryoarlogo.png" alt="Dry Oar Rafting Co. Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <img src="images/hero.jpg" alt="Rafting Hero Background" />
+      <h1>Dry Oar Rafting Co.</h1>
+      <article>
+        <img src="images/happy.jpg" alt="Happy Client" />
+        <p>Our mission is to deliver safe, unforgettable rafting adventures that connect you with the wild beauty of nature.</p>
+      </article>
+    </div>
+
+    <section>
+      <h2>History</h2>
+      <p>Dry Oar Rafting Co. was founded in the early 2000s by river enthusiasts with a passion for exploration and excitement.</p>
+    </section>
+
+    <section>
+      <h2>Adventure Awaits You!</h2>
+      <img src="images/adventure1.jpg" alt="Rafting 1" />
+      <img src="images/adventure2.jpg" alt="Rafting 2" />
+      <img src="images/adventure3.jpg" alt="Rafting 3" />
+      <img src="images/adventure4.jpg" alt="Rafting 4" />
+      <img src="images/adventure5.jpg" alt="Rafting 5" />
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Dry Oar Rafting Co. | Uwase Jolie</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" /></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" /></a>
+    </nav>
+  </footer>
+</body>
+</html>
+
+
