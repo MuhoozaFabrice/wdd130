@@ -906,3 +906,9 @@ img {
     margin-top: 1rem;
   }
 }
+
+header, main, footer {
+  max-width: 840px;
+  margin: 0 auto;
+  width: 95%;
+}
